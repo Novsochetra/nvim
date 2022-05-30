@@ -66,3 +66,5 @@
   source ~/.config/nvim/plugin-config/float-term.vim
 " ************************* End Floatterm Configuration ************************* "
 
+
+
