@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/sochetranov/Documents/workspace/personal-project/FakeApiGenerator'
+let g:netrw_dirhist_2='/Users/sochetranov/Documents/workspace/beniten/ZillionGamerApp/src/components/common'
+let g:netrw_dirhist_1='/Users/sochetranov/Documents/workspace/beniten/ZillionGamerApp/src/components'
+let g:netrw_dirhist_0='/Users/sochetranov/Documents/workspace/beniten/ZillionGamerApp/src/components/latest-news'
+let g:netrw_dirhist_9='/Users/sochetranov/Documents/workspace/beniten/ZillionGamerApp'
+let g:netrw_dirhist_8='/Users/sochetranov/Documents/self-learning/online-course-study/react-native-gestures-and-animations-boilerplate'
+let g:netrw_dirhist_7='/Users/sochetranov/Documents/workspace/freelancing-project/pthree'
+let g:netrw_dirhist_6='/Users/sochetranov/Documents/workspace/freelancing-project/pthree/src'
+let g:netrw_dirhist_5='/Users/sochetranov/Documents/workspace/freelancing-project/pthree'
+let g:netrw_dirhist_4='/Users/sochetranov'
