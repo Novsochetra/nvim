@@ -14,11 +14,14 @@ set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=1
-"set relativenumber
+" set relativenumber
 set number
 set lazyredraw
+" set guitablabel=%t
+set guitablabel=\[%N\]\ %t\ %M
 
-colorscheme OceanicNext
+" colorscheme OceanicNext
+colorscheme nightfly
 
 " for make trasparent when using ocean next
 hi Normal guibg=NONE ctermbg=NONE
@@ -29,4 +32,3 @@ hi EndOfBuffer guibg=NONE ctermbg=NONE
 let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
 let g:python3_host_prog = '/usr/local/bin/python3'
-
