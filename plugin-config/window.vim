@@ -5,6 +5,12 @@
   map <C-k> <C-w>k
   map <C-l> <C-w>l
 
+  " Resize Pane
+  map <S-Left> <C-w><
+  map <S-Right> <C-w>>
+  map <S-Up> <C-w>-
+  map <S-Down> <C-w>+
+
   " we need to escape \| in order it to work
   nmap <silent> ,f :wincmd<Space><S-\|><enter>
   nmap <silent> ,= :wincmd =<enter> 
