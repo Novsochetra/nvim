@@ -67,4 +67,6 @@
 " ************************* End Floatterm Configuration ************************* "
 
 
-
+" ************************* Quickfix Configuration ************************* "
+  source ~/.config/nvim/plugin-config/quickfix.vim
+" ************************* End Floatterm Configuration ************************* "
