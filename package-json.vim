@@ -1,6 +1,10 @@
 " ************************* Install Plugin ************************* "
 call plug#begin('~/.vim/plugged')
 
+" Plug 'github/copilot.vim'
+
+Plug 'bluz71/vim-nightfly-guicolors'
+
 Plug 'mhartington/oceanic-next'
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -28,6 +32,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'nvim-treesitter/nvim-treesitter-context'
 
 Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
 
@@ -58,7 +63,10 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 Plug 'jiangmiao/auto-pairs'
 
-Plug 'easymotion/vim-easymotion'
+" bunch of motion plugin: easymotion vs lightspeed, vs hop
+" Plug 'easymotion/vim-easymotion'
+
+Plug 'ggandor/lightspeed.nvim'
 
 " Float Terminal
 Plug 'voldikss/vim-floaterm'
