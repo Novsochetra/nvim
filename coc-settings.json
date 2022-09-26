@@ -1,5 +1,4 @@
 {
-  "coc.preferences.snippets.enable": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "markdown",
@@ -11,12 +10,20 @@
     "typescript",
     "python",
     "typescriptreact",
-    "javascriptreact"
+    "javascriptreact",
+    "rust"
   ],
 
   "tsserver.enable": true,
   "tsserver.enableJavascript": true,
   "javascript.format.enabled": true,
   "coc.preferences.formatOnType": true,
-  "flutter.lsp.initialization.closingLabels": true
+  "flutter.lsp.initialization.closingLabels": true,
+  "languageserver": {
+    "rust": {
+      "command": "rls",
+      "filetypes": ["rust"],
+      "rootPatterns": ["Cargo.toml"]
+    }
+  }
 }
