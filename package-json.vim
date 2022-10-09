@@ -59,7 +59,7 @@ Plug 'othree/javascript-libraries-syntax.vim'
 " Icons
 Plug 'ryanoasis/vim-devicons'
 
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 Plug 'jiangmiao/auto-pairs'
 
