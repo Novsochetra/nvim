@@ -7,7 +7,7 @@ Plug 'bluz71/vim-nightfly-guicolors'
 
 Plug 'mhartington/oceanic-next'
 
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'preservim/nerdtree', { 'on':  'NERDTreeToggle' }
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
