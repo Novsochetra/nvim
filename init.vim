@@ -70,3 +70,9 @@
 " ************************* Quickfix Configuration ************************* "
   source ~/.config/nvim/plugin-config/quickfix.vim
 " ************************* End Floatterm Configuration ************************* "
+
+
+" ************************* Harpoon Configuration ************************* "
+  source ~/.config/nvim/plugin-config/harpoon.vim
+" ************************* End Harpoon Configuration ************************* "
+

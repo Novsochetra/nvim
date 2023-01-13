@@ -46,6 +46,7 @@ Plug 'HerringtonDarkholme/yats.vim'
 
 " ReactJS JSX syntax highlighting
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'mxw/vim-jsx'
 
 " Generate JSDoc commands based on function signature
 Plug 'heavenshell/vim-jsdoc'
@@ -75,6 +76,8 @@ Plug 'voldikss/vim-floaterm'
 " Plug 'dense-analysis/ale'
 
 Plug 'mattn/emmet-vim'
+
+Plug 'ThePrimeagen/harpoon'
 
 " Theme
 Plug 'joshdick/onedark.vim'

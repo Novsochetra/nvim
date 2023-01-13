@@ -1,7 +1,8 @@
 set termguicolors
 filetype plugin indent on
 syntax on
-set guifont=SF\ Pro:h1
+" set guifont=SF\ Pro:h1
+set guifont=OperatorMono-LightItalic
 set mouse=a
 set tabstop=2
 set shiftwidth=2
@@ -14,8 +15,8 @@ set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=1
-" set relativenumber
-set number
+set relativenumber
+" set number
 set lazyredraw
 " set guitablabel=%t
 set guitablabel=\[%N\]\ %t\ %M
