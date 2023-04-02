@@ -76,3 +76,10 @@
   source ~/.config/nvim/plugin-config/harpoon.vim
 " ************************* End Harpoon Configuration ************************* "
 
+" ************************* Harpoon Configuration ************************* "
+  source ~/.config/nvim/plugin-config/treesitter.lua
+" ************************* End Harpoon Configuration ************************* "
+
+" ************************* Indent Blank Line Configuration ************************* "
+" source ~/.config/nvim/plugin-config/indent-blankline.lua
+" ************************* End Indent Blank Line Configuration ************************* "

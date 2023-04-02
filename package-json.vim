@@ -77,10 +77,18 @@ Plug 'voldikss/vim-floaterm'
 
 Plug 'mattn/emmet-vim'
 
+" Plug 'lukas-reineke/indent-blankline.nvim'
+
 Plug 'ThePrimeagen/harpoon'
 
 " Theme
 Plug 'joshdick/onedark.vim'
+
+Plug 'vimwiki/vimwiki'
+
+Plug 'itchyny/calendar.vim'
+
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
 if has('nvim')
   " Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }

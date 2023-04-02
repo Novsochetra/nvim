@@ -15,8 +15,6 @@
   ],
 
   "tsserver.enable": true,
-  "tsserver.enableJavascript": true,
-  "javascript.format.enabled": true,
   "coc.preferences.formatOnType": true,
   "flutter.lsp.initialization.closingLabels": true,
   "languageserver": {

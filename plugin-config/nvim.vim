@@ -11,10 +11,9 @@ set number
 set noswapfile
 set clipboard=unnamedplus
 set encoding=utf8
-set foldmethod=indent
-set foldnestmax=10
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
 set nofoldenable
-set foldlevel=1
 set relativenumber
 " set number
 set lazyredraw
@@ -33,3 +32,6 @@ hi EndOfBuffer guibg=NONE ctermbg=NONE
 let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
 let g:python3_host_prog = '/usr/local/bin/python3'
+
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
