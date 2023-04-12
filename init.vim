@@ -41,7 +41,7 @@
 " ************************* End Easy Configuration ************************* "
 
 " ************************* Emmet Configuration ************************* "
-  source ~/.config/nvim/plugin-config/emmet.vim
+" source ~/.config/nvim/plugin-config/emmet.vim
 " ************************* End Emmet Configuration ************************* "
 
 
