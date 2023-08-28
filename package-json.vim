@@ -75,7 +75,7 @@ Plug 'voldikss/vim-floaterm'
 " Lint Plugin
 " Plug 'dense-analysis/ale'
 
-" Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 Plug 'ThePrimeagen/harpoon'
 

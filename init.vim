@@ -81,5 +81,5 @@
 " ************************* End Harpoon Configuration ************************* "
 
 " ************************* Indent Blank Line Configuration ************************* "
-" source ~/.config/nvim/plugin-config/indent-blankline.lua
+source ~/.config/nvim/plugin-config/indent-blankline.lua
 " ************************* End Indent Blank Line Configuration ************************* "

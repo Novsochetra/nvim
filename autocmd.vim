@@ -15,9 +15,9 @@ augroup vimrc_autocmd
 augroup END
 
 
-command Exec set splitright | only | vnew | set filetype=sh | read !sh #
+command ExecPostman set splitright | only | vnew | set filetype=sh | read !sh #
 
-nnoremap <F2> :Exec <Enter><C-w>h
+nnoremap <F2> :ExecPostman <Enter><C-w>h
 
 " vscode keybinding
 nnoremap <A-Up> ddkP
