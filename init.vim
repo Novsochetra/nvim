@@ -2,6 +2,10 @@
   source ~/.config/nvim/package-json.vim
 " ************************* End Install Plugin ************************* "
 
+" ************************* Treesitter Configuration ************************* "
+  source ~/.config/nvim/plugin-config/treesitter.lua
+" ************************* End Treesitter Configuration ************************* "
+
 " ************************* UI Setup ************************* "
   source  ~/.config/nvim/plugin-config/nvim.vim
 " ************************* UI Setup ************************* "
@@ -76,10 +80,11 @@
   source ~/.config/nvim/plugin-config/harpoon.vim
 " ************************* End Harpoon Configuration ************************* "
 
-" ************************* Harpoon Configuration ************************* "
-  source ~/.config/nvim/plugin-config/treesitter.lua
-" ************************* End Harpoon Configuration ************************* "
-
 " ************************* Indent Blank Line Configuration ************************* "
 source ~/.config/nvim/plugin-config/indent-blankline.lua
 " ************************* End Indent Blank Line Configuration ************************* "
+
+" ************************* Colorizer Configuration ************************* "
+source ~/.config/nvim/plugin-config/colorizer.lua
+" ************************* End Colorizer Configuration ************************* "
+

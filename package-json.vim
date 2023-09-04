@@ -96,6 +96,7 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
+Plug 'norcalli/nvim-colorizer.lua'
 
 call plug#end()
 " ************************* End Install Plugin ************************* "

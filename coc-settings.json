@@ -1,5 +1,5 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": [
+  "coc.preferences.formatOnSave": [
     "css",
     "markdown",
     "graphql",
@@ -22,6 +22,12 @@
       "command": "rls",
       "filetypes": ["rust"],
       "rootPatterns": ["Cargo.toml"]
+    },
+    "coc-clangd": {
+      "command": "clangd",
+      "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+      "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
     }
-  }
+  },
+  "snippets.ultisnips.pythonPrompt": false
 }
