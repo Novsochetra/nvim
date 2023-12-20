@@ -77,7 +77,7 @@
 
 
 " ************************* Harpoon Configuration ************************* "
-  source ~/.config/nvim/plugin-config/harpoon.vim
+  source ~/.config/nvim/plugin-config/harpoon.lua
 " ************************* End Harpoon Configuration ************************* "
 
 " ************************* Indent Blank Line Configuration ************************* "
