@@ -88,3 +88,7 @@ source ~/.config/nvim/plugin-config/indent-blankline.lua
 source ~/.config/nvim/plugin-config/colorizer.lua
 " ************************* End Colorizer Configuration ************************* "
 
+" ************************* Diffview Configuration ************************* "
+source ~/.config/nvim/plugin-config/diff-view.vim
+" ************************* End Diffview Configuration ************************* "
+

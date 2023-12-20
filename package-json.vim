@@ -98,5 +98,6 @@ endif
 
 Plug 'norcalli/nvim-colorizer.lua'
 
+Plug 'sindrets/diffview.nvim'
 call plug#end()
 " ************************* End Install Plugin ************************* "
