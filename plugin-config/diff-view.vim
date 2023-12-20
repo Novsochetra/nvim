@@ -1,2 +1,1 @@
-
-map <C-D> :DiffviewFileHistory %<CR>
+nnoremap <F8> :DiffviewFileHistory %<CR>
