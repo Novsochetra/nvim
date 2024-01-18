@@ -27,5 +27,16 @@ end)
 require("ibl").setup {
     indent = { highlight = highlight, char = "┊" },
     scope = { enabled = false, char = "┊" },
+    exclude = {
+      filetypes = {
+        'lspinfo',
+        'packer',
+        'checkhealth',
+        'help',
+        'man',
+        'dashboard',
+        '',
+      },
+    },
 }
 

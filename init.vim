@@ -92,3 +92,8 @@ source ~/.config/nvim/plugin-config/colorizer.lua
 source ~/.config/nvim/plugin-config/diff-view.vim
 " ************************* End Diffview Configuration ************************* "
 
+
+" ************************* Dashboard Configuration ************************* "
+  source ~/.config/nvim/plugin-config/dashboard.lua
+" ************************* DashboardConfiguration ************************* "
+

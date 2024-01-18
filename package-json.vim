@@ -100,5 +100,9 @@ Plug 'norcalli/nvim-colorizer.lua'
 
 Plug 'sindrets/diffview.nvim'
 Plug 'christoomey/vim-tmux-navigator'
+
+Plug 'nvimdev/dashboard-nvim'
+Plug 'nvim-tree/nvim-web-devicons'
+
 call plug#end()
 " ************************* End Install Plugin ************************* "
