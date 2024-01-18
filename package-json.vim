@@ -99,5 +99,6 @@ endif
 Plug 'norcalli/nvim-colorizer.lua'
 
 Plug 'sindrets/diffview.nvim'
+Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 " ************************* End Install Plugin ************************* "
