@@ -33,8 +33,8 @@ vim.keymap.set('n', '<leader>/', function()
   })
 end, { desc = 'Search in current file' })
 
-vim.keymap.set('n', '<leader>tt', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
+vim.keymap.set('n', '<leader>t', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
 vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = 'Search word in files in a working project directory' })
 
-vim.keymap.set('n', '<leader>th', builtin.help_tags, {})
+vim.keymap.set('n', '<leader>sh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>ss', require('telescope.builtin').builtin, { desc = '[S]earch [S]elect Telescope (which keymap is no our neovim)' })
