@@ -55,7 +55,7 @@
 
 
 " ************************* Telescope Configuration ************************* "
-  source ~/.config/nvim/plugin-config/telescope.vim
+  source ~/.config/nvim/plugin-config/telescope.lua
 " ************************* End Telescope Configuration ************************* "
 
 " ************************* Airline Configuration ************************* "
