@@ -12,7 +12,13 @@ augroup vimrc_autocmd
   " autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
   au FileType html let b:coc_root_patterns = ['.git', '.env', 'tailwind.config.js', 'tailwind.config.cjs']
+
+  autocmd VimEnter * call  OpenTerm()
 augroup END
+
+function! OpenTerm()
+  Dashboard
+endfunction
 
 
 command ExecPostman set splitright | only | vnew | set filetype=sh | read !sh #
