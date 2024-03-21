@@ -3,7 +3,8 @@ set termguicolors
 filetype plugin indent on
 syntax on
 " set guifont=SF\ Pro:h1
-set guifont=OperatorMono-LightItalic
+" set guifont=OperatorMono-LightItalic
+set guifont=JetBrainsMono\ Nerd\ Font\ MonoMono
 set mouse=a
 set tabstop=2
 set shiftwidth=2
@@ -23,6 +24,7 @@ set guitablabel=\[%N\]\ %t\ %M
 
 " colorscheme OceanicNext
 colorscheme nightfly
+" colorscheme neon
 
 " for make trasparent when using ocean next
 hi Normal guibg=NONE ctermbg=NONE
