@@ -1,7 +1,12 @@
 " ************************* Install Plugin ************************* "
 call plug#begin('~/.vim/plugged')
 
-" Plug 'github/copilot.vim'
+Plug 'github/copilot.vim'
+
+" for plugin copilot chat
+Plug 'zbirenbaum/copilot.lua'
+Plug 'CopilotC-Nvim/CopilotChat.nvim', { 'branch': 'canary' }
+" for plugin copilot chat
 
 Plug 'bluz71/vim-nightfly-guicolors'
 

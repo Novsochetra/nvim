@@ -97,3 +97,7 @@ source ~/.config/nvim/plugin-config/diff-view.vim
   source ~/.config/nvim/plugin-config/dashboard.lua
 " ************************* DashboardConfiguration ************************* "
 
+" ************************* Copilot Chat Configuration ************************* "
+  source ~/.config/nvim/plugin-config/copilot-chat.lua
+" ************************* Copilot Chat Configuration ************************* "
+
