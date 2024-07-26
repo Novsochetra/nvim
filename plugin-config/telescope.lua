@@ -37,4 +37,6 @@ vim.keymap.set('n', '<leader>sp', require('telescope.builtin').find_files, { des
 vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = 'Search word in files in a working project directory' })
 
 vim.keymap.set('n', '<leader>sh', builtin.help_tags, {})
-vim.keymap.set('n', '<leader>ss', require('telescope.builtin').builtin, { desc = '[S]earch [S]elect Telescope (which keymap is no our neovim)' })
+vim.keymap.set('n', '<leader>sk', require('telescope.builtin').builtin, { desc = '[S]earch [S]elect Telescope (which keymap is no our neovim)' })
+vim.keymap.set('n', '<leader>so', require('telescope.builtin').treesitter, { desc = 'Lists Function names, variables, from Treesitter!' })
+
