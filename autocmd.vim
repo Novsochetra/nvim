@@ -17,7 +17,10 @@ augroup vimrc_autocmd
 augroup END
 
 function! OpenTerm()
-  Dashboard
+  " Open the dashboard automatically when starting nvim with no file or with a specific file
+  if argc() == 0 || !filereadable(expand("%:p"))
+    Dashboard
+  end
 endfunction
 
 
