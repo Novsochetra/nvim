@@ -6,6 +6,10 @@
   source ~/.config/nvim/plugin-config/treesitter.lua
 " ************************* End Treesitter Configuration ************************* "
 
+" ************************* Treesitter Context Configuration ************************* "
+  source ~/.config/nvim/plugin-config/nvim-treesiter-context.lua
+" ************************* End Treesitter Context Configuration ************************* "
+
 " ************************* UI Setup ************************* "
   source  ~/.config/nvim/plugin-config/nvim.vim
 " ************************* UI Setup ************************* "
