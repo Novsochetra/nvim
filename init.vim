@@ -45,7 +45,7 @@
 " ************************* End Coc Configuration ************************* "
 
 " ************************* Easy Configuration ************************* "
-  source ~/.config/nvim/plugin-config/easy-motion.vim
+  source ~/.config/nvim/plugin-config/hop.lua
 " ************************* End Easy Configuration ************************* "
 
 " ************************* Emmet Configuration ************************* "

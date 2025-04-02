@@ -73,8 +73,9 @@ Plug 'jiangmiao/auto-pairs'
 
 " bunch of motion plugin: easymotion vs lightspeed, vs hop
 " Plug 'easymotion/vim-easymotion'
+Plug 'smoka7/hop.nvim', { 'branch': 'v2' }
 
-Plug 'ggandor/lightspeed.nvim'
+" Plug 'ggandor/lightspeed.nvim'
 
 " Float Terminal
 Plug 'voldikss/vim-floaterm'

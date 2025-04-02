@@ -1,7 +1,6 @@
 " easy motion
 if exists('g:EasyMotion_keys')
-  map <Space>f <Plug>(easymotion-f) 
-  map <Space>F <Plug>(easymotion-F) 
+  map <Leader> <Plug>(easymotion-prefix)
   map <Space>t <Plug>(easymotion-t) 
   map <Space>T <Plug>(easymotion-T) 
   map <Space>w <Plug>(easymotion-w) 
@@ -14,7 +13,5 @@ if exists('g:EasyMotion_keys')
   map <Space>gE <Plug>(easymotion-gE)
   map <Space>j <Plug>(easymotion-j) 
   map <Space>k <Plug>(easymotion-k) 
-  map <Space>n <Plug>(easymotion-n) 
-  map <Space>N <Plug>(easymotion-N) 
   map <Space>s <Plug>(easymotion-s) 
 endif
