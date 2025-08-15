@@ -4,8 +4,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'github/copilot.vim'
 
 " for plugin copilot chat
-Plug 'zbirenbaum/copilot.lua'
-Plug 'CopilotC-Nvim/CopilotChat.nvim', { 'branch': 'canary' }
+" Plug 'zbirenbaum/copilot.lua'
+" Plug 'CopilotC-Nvim/CopilotChat.nvim', { 'branch': 'canary' }
 " for plugin copilot chat
 
 Plug 'bluz71/vim-nightfly-guicolors'
@@ -35,6 +35,7 @@ Plug 'tpope/vim-surround'
 Plug 'nvim-lua/plenary.nvim'
 
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-live-grep-args.nvim'
 
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 

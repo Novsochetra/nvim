@@ -26,15 +26,18 @@ telescope.setup {
 
 pcall(require('telescope').load_extension, 'fzf')
 
+telescope.load_extension("live_grep_args")
+
 vim.keymap.set('n', '<leader>sf', function()
   -- You can pass additional configuration to telescope to change theme, layout, etc.
   require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
     previewer = false,
+    sorting_strategy = "ascending",
   })
 end, { desc = 'Search in current file' })
 
 vim.keymap.set('n', '<leader>sp', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
-vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = 'Search word in files in a working project directory' })
+vim.keymap.set("n", "<leader>sg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
 
 vim.keymap.set('n', '<leader>sh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>sk', require('telescope.builtin').builtin, { desc = '[S]earch [S]elect Telescope (which keymap is no our neovim)' })
