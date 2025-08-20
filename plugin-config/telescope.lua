@@ -11,6 +11,7 @@ telescope.setup {
         ["<S-a>"] = require("telescope.actions").toggle_all,
       },
     },
+    file_ignore_patterns = { "node_modules", ".git" }
   },
 
   extensions = {
@@ -36,8 +37,23 @@ vim.keymap.set('n', '<leader>sf', function()
   })
 end, { desc = 'Search in current file' })
 
+
 vim.keymap.set('n', '<leader>sp', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
-vim.keymap.set("n", "<leader>sg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
+
+local lga = require("telescope").extensions.live_grep_args.live_grep_args
+local actions = require("telescope.actions")
+vim.keymap.set("n", "<leader>sg", function()
+  lga({
+    attach_mappings = function(_, map)
+      -- Replace quickfix with results
+      map("i", "<C-q>", actions.send_selected_to_qflist + actions.open_qflist)
+      map("n", "<C-q>", actions.send_selected_to_qflist  + actions.open_qflist)
+      return true
+    end
+  })
+end)
+
+vim.keymap.set("n", "<leader><leader>", require("telescope.builtin").resume)
 
 vim.keymap.set('n', '<leader>sh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>sk', require('telescope.builtin').builtin, { desc = '[S]earch [S]elect Telescope (which keymap is no our neovim)' })
