@@ -11,7 +11,7 @@
 " ************************* End Treesitter Context Configuration ************************* "
 
 " ************************* UI Setup ************************* "
-  source  ~/.config/nvim/plugin-config/nvim.vim
+  source  ~/.config/nvim/plugin-config/nvim.lua
 " ************************* UI Setup ************************* "
 
 " ************************* Window Configuration ************************* "
@@ -41,7 +41,7 @@
 " * * * END NERDTree CONFIGURATION * * *  "
 
 " ************************* Coc Configuration ************************* "
-  source ~/.config/nvim/plugin-config/coc.vim
+" source ~/.config/nvim/plugin-config/coc.vim
 " ************************* End Coc Configuration ************************* "
 
 " ************************* Easy Configuration ************************* "
@@ -70,38 +70,68 @@
   source ~/.config/nvim/plugin-config/webdev-icon.vim
 " ************************* End Webdev Icon Configuration ************************* "
 
-" ************************* Floatterm Configuration ************************* "
-  source ~/.config/nvim/plugin-config/float-term.vim
-" ************************* End Floatterm Configuration ************************* "
-
-
 " ************************* Quickfix Configuration ************************* "
   source ~/.config/nvim/plugin-config/quickfix.vim
 " ************************* End Floatterm Configuration ************************* "
-
 
 " ************************* Harpoon Configuration ************************* "
   source ~/.config/nvim/plugin-config/harpoon.lua
 " ************************* End Harpoon Configuration ************************* "
 
 " ************************* Indent Blank Line Configuration ************************* "
-source ~/.config/nvim/plugin-config/indent-blankline.lua
+  source ~/.config/nvim/plugin-config/indent-blankline.lua
 " ************************* End Indent Blank Line Configuration ************************* "
 
 " ************************* Colorizer Configuration ************************* "
-source ~/.config/nvim/plugin-config/colorizer.lua
+  source ~/.config/nvim/plugin-config/colorizer.lua
 " ************************* End Colorizer Configuration ************************* "
 
 " ************************* Diffview Configuration ************************* "
-source ~/.config/nvim/plugin-config/diff-view.vim
+  source ~/.config/nvim/plugin-config/diff-view.vim
 " ************************* End Diffview Configuration ************************* "
-
 
 " ************************* Dashboard Configuration ************************* "
   source ~/.config/nvim/plugin-config/dashboard.lua
 " ************************* DashboardConfiguration ************************* "
 
+" ************************* Dashboard Configuration ************************* "
+  source ~/.config/nvim/plugin-config/notify.lua
+" ************************* DashboardConfiguration ************************* "
+
 " ************************* Copilot Chat Configuration ************************* "
 "  source ~/.config/nvim/plugin-config/copilot-chat.lua
 " ************************* Copilot Chat Configuration ************************* "
+
+" ************************* Mason Configuration ************************* "
+  source ~/.config/nvim/plugin-config/mason.lua
+" ************************* Mason Configuration ************************* "
+
+" ************************* nvim-cmp Configuration ************************* "
+  source ~/.config/nvim/plugin-config/nvim-cmp.lua
+" ************************* nvim-cmp Configuration ************************* "
+
+" ************************* LuaSnip Configuration ************************* "
+  source ~/.config/nvim/plugin-config/luasnip.lua
+" ************************* LuaSnip Configuration ************************* "
+
+" ************************* LspKind Configuration ************************* "
+  source ~/.config/nvim/plugin-config/lspkind.lua
+" ************************* LspKind Configuration ************************* "
+
+" ************************* Nvim-AutoPairs Configuration ************************* "
+  source ~/.config/nvim/plugin-config/nvim-auto-pairs.lua
+" ************************* Nvim-AutoPairs Configuration ************************* "
+
+" ************************* Conform Configuration ************************* "
+  source ~/.config/nvim/plugin-config/conform.lua
+" ************************* Conform Configuration ************************* "
+
+" ************************* ToggleTerm Configuration ************************* "
+  source ~/.config/nvim/plugin-config/toggleterm-nvim.lua
+" ************************* ToggleTerm Configuration ************************* "
+
+" ************************* Noice Configuration ************************* "
+  source ~/.config/nvim/plugin-config/noice.lua
+" ************************* Noice Configuration ************************* "
+
 

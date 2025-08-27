@@ -21,7 +21,7 @@ set ignorecase smartcase
 " set number
 set lazyredraw
 " set guitablabel=%t
-set guitablabel=\[%N\]\ %t\ %M
+" set guitablabel=\[%N\]\ %t\ %M
 
 " colorscheme OceanicNext
 colorscheme nightfly
@@ -39,3 +39,8 @@ let g:python3_host_prog = '/usr/local/bin/python3'
 
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
+
+if exists("g:neovide")
+    " Put anything you want to happen only in Neovide here
+    set guifont=SF\ Pro:h1
+endif

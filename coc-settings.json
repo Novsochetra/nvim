@@ -1,25 +1,11 @@
 {
-  "coc.preferences.formatOnSave": [
-    "css",
-    "markdown",
-    "graphql",
-    "javascript",
-    "html",
-    "yaml",
-    "json",
-    "typescript",
-    "python",
-    "typescriptreact",
-    "javascriptreact",
-    "rust"
-  ],
-
-  "tsserver.enable": true,
+  "coc.preferences.formatOnSave": true,
   "coc.preferences.formatOnType": true,
   "flutter.lsp.initialization.closingLabels": true,
+  "rust-analyzer.enable": true,
   "languageserver": {
     "rust": {
-      "command": "rls",
+      "command": "rust-analyzer",
       "filetypes": ["rust"],
       "rootPatterns": ["Cargo.toml"]
     },
@@ -27,6 +13,19 @@
       "command": "clangd",
       "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
       "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
+    },
+    "tailwindcss": {
+      "command": "tailwindcss-language-server",
+      "args": ["--stdio"],
+      "filetypes": [
+        "html",
+        "javascript",
+        "typescript",
+        "javascriptreact",
+        "typescriptreact",
+        "vue",
+        "svelte"
+      ]
     }
   },
   "snippets.ultisnips.pythonPrompt": false

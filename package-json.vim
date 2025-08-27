@@ -1,117 +1,85 @@
 " ************************* Install Plugin ************************* "
 call plug#begin('~/.vim/plugged')
-
-Plug 'github/copilot.vim'
-
-" for plugin copilot chat
-" Plug 'zbirenbaum/copilot.lua'
-" Plug 'CopilotC-Nvim/CopilotChat.nvim', { 'branch': 'canary' }
-" for plugin copilot chat
-
+" =====================
+" Colors / Themes
+" =====================
+Plug 'joshdick/onedark.vim'
 Plug 'bluz71/vim-nightfly-guicolors'
-
 Plug 'mhartington/oceanic-next'
-
-Plug 'preservim/nerdtree', { 'on':  'NERDTreeToggle' }
-
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 Plug 'morhetz/gruvbox'
 
-Plug 'vim-airline/vim-airline'
-
-Plug 'vim-airline/vim-airline-themes'
-
-Plug 'mhinz/vim-signify'
-
-Plug 'tpope/vim-fugitive'
-
-Plug 'tpope/vim-surround'
-
-" Plugin for search file
-Plug 'nvim-lua/plenary.nvim'
-
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-telescope/telescope-live-grep-args.nvim'
-
-Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
-Plug 'nvim-treesitter/nvim-treesitter-context'
-
-Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
-
-" Plugin for fluter
-Plug 'dart-lang/dart-vim-plugin'
-Plug 'thosakwe/vim-flutter'
-
-" === Javascript Plugins === "
-" Typescript syntax highlighting
-Plug 'HerringtonDarkholme/yats.vim'
-
-" ReactJS JSX syntax highlighting
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'mxw/vim-jsx'
-
-" Generate JSDoc commands based on function signature
-Plug 'heavenshell/vim-jsdoc'
-
-" Syntax highlighting for javascript libraries
-Plug 'othree/javascript-libraries-syntax.vim'
-
-" Improved syntax highlighting and indentation
-" Plug 'othree/yajs.vim'
-
-" Icons
-Plug 'ryanoasis/vim-devicons'
-
-" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
-Plug 'jiangmiao/auto-pairs'
-
-" bunch of motion plugin: easymotion vs lightspeed, vs hop
-" Plug 'easymotion/vim-easymotion'
+" =====================
+" File Explorer / Navigation
+" =====================
+Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'ThePrimeagen/harpoon', {'branch': 'harpoon2'}
 Plug 'smoka7/hop.nvim', { 'branch': 'v2' }
 
-" Plug 'ggandor/lightspeed.nvim'
+" =====================
+" Fuzzy Finder / Telescope
+" =====================
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-live-grep-args.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
-" Float Terminal
-Plug 'voldikss/vim-floaterm'
+" =====================
+" LSP / Completion
+" =====================
+Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/mason.nvim', {'branch': 'main'}
+Plug 'mason-org/mason-lspconfig.nvim'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'L3MON4D3/LuaSnip'
+Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'onsails/lspkind.nvim'
+Plug 'MunifTanjim/nui.nvim'
+Plug 'windwp/nvim-autopairs'
+Plug 'stevearc/conform.nvim'
 
-" Lint Plugin
-" Plug 'dense-analysis/ale'
-
-Plug 'lukas-reineke/indent-blankline.nvim'
-
-Plug 'ThePrimeagen/harpoon', {'branch': 'harpoon2'}
-
-" Theme
-Plug 'joshdick/onedark.vim'
-
-Plug 'vimwiki/vimwiki'
-
-Plug 'itchyny/calendar.vim'
-
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
-
-if has('nvim')
-  " Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  " Plug 'Shougo/denite.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-
+" =====================
+" Treesitter / Syntax
+" =====================
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter-context'
 Plug 'norcalli/nvim-colorizer.lua'
 
+" =====================
+" Git / Diff / Version Control
+" =====================
+Plug 'tpope/vim-fugitive'
+Plug 'mhinz/vim-signify'
 Plug 'sindrets/diffview.nvim'
-Plug 'christoomey/vim-tmux-navigator'
 
-Plug 'nvimdev/dashboard-nvim'
+" =====================
+" Statusline / UI Enhancements
+" =====================
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
 Plug 'nvim-tree/nvim-web-devicons'
+Plug 'rcarriga/nvim-notify'
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'nvimdev/dashboard-nvim'
+Plug 'folke/noice.nvim'
 
+" =====================
+" Markdown / Wiki / Notes
+" =====================
+Plug 'vimwiki/vimwiki'
+Plug 'itchyny/calendar.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+
+" =====================
+" Terminal / Toggleterm
+" =====================
+Plug 'akinsho/toggleterm.nvim'
 call plug#end()
 " ************************* End Install Plugin ************************* "
