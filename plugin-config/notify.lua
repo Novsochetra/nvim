@@ -3,16 +3,19 @@ local notify = require("notify")
 
 notify.setup({
   -- Background color of the notification window
-  background_colour = "#000000",  -- or try "background_color"
-  
+  background_colour = "#000000", -- or try "background_color"
+
   -- Optional: timeout in ms
   timeout = 3000,
-  
+
   -- Optional: animation style
   stages = "fade",
-  
+
   -- Optional: render style
-  render = "compact"
+  render = "compact",
+
+  max_width = 60,  -- not officially supported but some forks respect it
+  max_height = 10, -- same as above
 })
 
 vim.cmd([[
@@ -44,4 +47,3 @@ vim.cmd([[
 
 -- Override vim.notify to use nvim-notify
 vim.notify = notify
-

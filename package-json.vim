@@ -1,9 +1,7 @@
 " ************************* Install Plugin ************************* "
 call plug#begin('~/.vim/plugged')
 " =====================
-" Colors / Themes
-" =====================
-Plug 'joshdick/onedark.vim'
+" Colors / Themes ===================== Plug 'joshdick/onedark.vim'
 Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'mhartington/oceanic-next'
 Plug 'morhetz/gruvbox'
@@ -43,6 +41,8 @@ Plug 'onsails/lspkind.nvim'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'windwp/nvim-autopairs'
 Plug 'stevearc/conform.nvim'
+Plug 'stevearc/dressing.nvim' " optional for vim.ui.select
+Plug 'nvim-flutter/flutter-tools.nvim'
 
 " =====================
 " Treesitter / Syntax
@@ -67,14 +67,15 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'rcarriga/nvim-notify'
 Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'nvimdev/dashboard-nvim'
 Plug 'folke/noice.nvim'
+Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
+Plug 'nvimdev/dashboard-nvim'
 
 " =====================
 " Markdown / Wiki / Notes
 " =====================
-Plug 'vimwiki/vimwiki'
-Plug 'itchyny/calendar.vim'
+" Plug 'vimwiki/vimwiki'
+" Plug 'itchyny/calendar.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
 " =====================

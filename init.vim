@@ -2,6 +2,10 @@
   source ~/.config/nvim/package-json.vim
 " ************************* End Install Plugin ************************* "
 
+" ************************* Notify Configuration ************************* "
+  source ~/.config/nvim/plugin-config/dashboard.lua
+" ************************* Notify Configuration ************************* "
+
 " ************************* Treesitter Configuration ************************* "
   source ~/.config/nvim/plugin-config/treesitter.lua
 " ************************* End Treesitter Configuration ************************* "
@@ -20,7 +24,7 @@
 
 
 " ************************* Tab Configuration ************************* "
-  source ~/.config/nvim/plugin-config/tab.vim
+  source ~/.config/nvim/plugin-config/tab.lua
 " ************************* End Tab Configuration ************************* "
 
 " ************************* Git Configuration ************************* "
@@ -90,13 +94,9 @@
   source ~/.config/nvim/plugin-config/diff-view.vim
 " ************************* End Diffview Configuration ************************* "
 
-" ************************* Dashboard Configuration ************************* "
-  source ~/.config/nvim/plugin-config/dashboard.lua
-" ************************* DashboardConfiguration ************************* "
-
-" ************************* Dashboard Configuration ************************* "
+" ************************* Notify Configuration ************************* "
   source ~/.config/nvim/plugin-config/notify.lua
-" ************************* DashboardConfiguration ************************* "
+" ************************* Notify Configuration ************************* "
 
 " ************************* Copilot Chat Configuration ************************* "
 "  source ~/.config/nvim/plugin-config/copilot-chat.lua
@@ -134,4 +134,11 @@
   source ~/.config/nvim/plugin-config/noice.lua
 " ************************* Noice Configuration ************************* "
 
+" ************************* Flutter / Dart Configuration ************************* "
+  source ~/.config/nvim/plugin-config/nvim-flutter.lua
+" ************************* Flutter / Dart Configuration ************************* "
+
+" ************************* Bufferline Configuration ************************* "
+  source ~/.config/nvim/plugin-config/bufferline.lua
+" ************************* Bufferline Configuration ************************* "
 
