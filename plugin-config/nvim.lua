@@ -35,22 +35,14 @@ vim.opt.colorcolumn = "120"
 -- Search & performance
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
--- vim.opt.lazyredraw = true
 
 -- Colorscheme
-vim.cmd.colorscheme "nightfly"
--- vim.cmd.colorscheme "catppuccin"
-
-vim.cmd [[
-hi Normal guibg=NONE ctermbg=NONE
-hi LineNr guibg=NONE ctermbg=NONE
-hi SignColumn guibg=NONE ctermbg=NONE
-hi EndOfBuffer guibg=NONE ctermbg=NONE
-]]
+-- vim.cmd.colorscheme "nightfly"
+vim.cmd.colorscheme "catppuccin-macchiato" -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
 
 -- OceanicNext terminal options
-vim.g.oceanic_next_terminal_bold = 1
-vim.g.oceanic_next_terminal_italic = 1
+-- vim.g.oceanic_next_terminal_bold = 1
+-- vim.g.oceanic_next_terminal_italic = 1
 
 -- Python host
 vim.g.python3_host_prog = '/usr/local/bin/python3'

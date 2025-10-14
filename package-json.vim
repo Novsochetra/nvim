@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'mhartington/oceanic-next'
 Plug 'morhetz/gruvbox'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
 " =====================
 " File Explorer / Navigation
@@ -43,6 +44,7 @@ Plug 'windwp/nvim-autopairs'
 Plug 'stevearc/conform.nvim'
 Plug 'stevearc/dressing.nvim' " optional for vim.ui.select
 Plug 'nvim-flutter/flutter-tools.nvim'
+Plug 'kylechui/nvim-surround'
 
 " =====================
 " Treesitter / Syntax

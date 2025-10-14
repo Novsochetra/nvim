@@ -142,3 +142,8 @@
   source ~/.config/nvim/plugin-config/bufferline.lua
 " ************************* Bufferline Configuration ************************* "
 
+" ************************* nvim/surround Configuration ************************* "
+  source ~/.config/nvim/plugin-config/nvim-surround.lua
+" ************************* nvim/surround Configuration ************************* "
+
+
