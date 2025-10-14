@@ -38,11 +38,26 @@ vim.opt.smartcase = true
 
 -- Colorscheme
 -- vim.cmd.colorscheme "nightfly"
-vim.cmd.colorscheme "catppuccin-macchiato" -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+-- local theme_name = "catppuccin-latte" -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+local theme_name = "vaporwave" -- onedark onelight onedark_vivid onedark_dark vaporwave
+vim.cmd("colorscheme " .. theme_name)
 
--- OceanicNext terminal options
--- vim.g.oceanic_next_terminal_bold = 1
--- vim.g.oceanic_next_terminal_italic = 1
+-- Function to update cursor based on theme
+local function update_cursor_for_theme(theme)
+  if theme == "onelight" or theme == "latte" then
+    vim.api.nvim_set_hl(0, "Cursor", { fg = "#000000", bg = "#000000" })
+    -- Light theme → dark cursor
+    vim.api.nvim_set_hl(0, "Cursor", { fg = "NONE", bg = "#000000" })
+    vim.api.nvim_set_hl(0, "lCursor", { fg = "NONE", bg = "#000000" })
+  else
+    -- Dark theme → light cursor
+    vim.api.nvim_set_hl(0, "Cursor", { fg = "NONE", bg = "#FFFFFF" })
+    vim.api.nvim_set_hl(0, "lCursor", { fg = "NONE", bg = "#FFFFFF" })
+  end
+end
+
+update_cursor_for_theme(theme_name)
+
 
 -- Python host
 vim.g.python3_host_prog = '/usr/local/bin/python3'

@@ -146,4 +146,7 @@
   source ~/.config/nvim/plugin-config/nvim-surround.lua
 " ************************* nvim/surround Configuration ************************* "
 
-
+"                                 Theme Only 
+" ************************* nvim/surround Configuration ************************* "
+  source ~/.config/nvim/plugin-config/one-dark-pro.lua
+" ************************* nvim/surround Configuration ************************* "

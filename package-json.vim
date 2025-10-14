@@ -6,6 +6,7 @@ Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'mhartington/oceanic-next'
 Plug 'morhetz/gruvbox'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'olimorris/onedarkpro.nvim'
 
 " =====================
 " File Explorer / Navigation
