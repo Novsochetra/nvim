@@ -38,23 +38,28 @@ vim.opt.smartcase = true
 
 -- Colorscheme
 -- vim.cmd.colorscheme "nightfly"
--- local theme_name = "catppuccin-latte" -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
-local theme_name = "vaporwave" -- onedark onelight onedark_vivid onedark_dark vaporwave
+-- local theme_name = "catppuccin-mocha" -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+local theme_name = "onedark" -- onedark onelight onedark_vivid onedark_dark vaporwave
 vim.cmd("colorscheme " .. theme_name)
 
 -- Function to update cursor based on theme
 local function update_cursor_for_theme(theme)
   if theme == "onelight" or theme == "latte" then
-    vim.api.nvim_set_hl(0, "Cursor", { fg = "#000000", bg = "#000000" })
-    -- Light theme → dark cursor
-    vim.api.nvim_set_hl(0, "Cursor", { fg = "NONE", bg = "#000000" })
-    vim.api.nvim_set_hl(0, "lCursor", { fg = "NONE", bg = "#000000" })
+    -- Light theme → purple cursor
+    vim.opt.guicursor = "n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor,r-cr-o:hor20-Cursor"
+    vim.api.nvim_set_hl(0, "Cursor", { bg = "#432dd7", fg = "NONE" })
+    vim.api.nvim_set_hl(0, "lCursor", { bg = "#432dd7", fg = "NONE" })
   else
-    -- Dark theme → light cursor
-    vim.api.nvim_set_hl(0, "Cursor", { fg = "NONE", bg = "#FFFFFF" })
-    vim.api.nvim_set_hl(0, "lCursor", { fg = "NONE", bg = "#FFFFFF" })
+    -- Dark theme → white cursor
+    vim.opt.guicursor = "n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor,r-cr-o:hor20-Cursor"
+    vim.api.nvim_set_hl(0, "Cursor", { bg = "#FFFFFF", fg = "NONE" })
+    vim.api.nvim_set_hl(0, "lCursor", { bg = "#FFFFFF", fg = "NONE" })
+    vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
+    vim.cmd('hi EndOfBuffer guibg=NONE ctermbg=NONE')
   end
 end
+
+
 
 update_cursor_for_theme(theme_name)
 
