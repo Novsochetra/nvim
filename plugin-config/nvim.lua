@@ -55,7 +55,6 @@ local function update_cursor_for_theme(theme)
     vim.api.nvim_set_hl(0, "Cursor", { bg = "#FFFFFF", fg = "NONE" })
     vim.api.nvim_set_hl(0, "lCursor", { bg = "#FFFFFF", fg = "NONE" })
     vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
-    vim.cmd('hi EndOfBuffer guibg=NONE ctermbg=NONE')
   end
 end
 
