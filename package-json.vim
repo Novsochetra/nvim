@@ -14,7 +14,8 @@ Plug 'olimorris/onedarkpro.nvim'
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ThePrimeagen/harpoon', {'branch': 'harpoon2'}
-Plug 'smoka7/hop.nvim', { 'branch': 'v2' }
+Plug 'ggandor/leap.nvim'
+Plug 'nvim-tree/nvim-tree.lua'
 
 " =====================
 " Fuzzy Finder / Telescope

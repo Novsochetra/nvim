@@ -41,16 +41,12 @@
 " ************************* End Auto Load Key Binding Configuration ************************* "
 
 "" * * * NERDTree CONFIGURATION * * *  "
-  source ~/.config/nvim/plugin-config/nerdtree.vim
+"  source ~/.config/nvim/plugin-config/nerdtree.vim
 " * * * END NERDTree CONFIGURATION * * *  "
 
 " ************************* Coc Configuration ************************* "
 " source ~/.config/nvim/plugin-config/coc.vim
 " ************************* End Coc Configuration ************************* "
-
-" ************************* Easy Configuration ************************* "
-  source ~/.config/nvim/plugin-config/hop.lua
-" ************************* End Easy Configuration ************************* "
 
 " ************************* Emmet Configuration ************************* "
 " source ~/.config/nvim/plugin-config/emmet.vim
@@ -145,6 +141,15 @@
 " ************************* nvim/surround Configuration ************************* "
   source ~/.config/nvim/plugin-config/nvim-surround.lua
 " ************************* nvim/surround Configuration ************************* "
+
+" ************************* nvim/leap Configuration ************************* "
+  source ~/.config/nvim/plugin-config/leap.lua
+" ************************* nvim/leap Configuration ************************* "
+
+" ************************* nvim/tree Configuration ************************* "
+  source ~/.config/nvim/plugin-config/nvim-tree.lua
+" ************************* nvim/tree Configuration ************************* "
+
 
 "                                 Theme Only 
 " ************************* nvim/surround Configuration ************************* "
