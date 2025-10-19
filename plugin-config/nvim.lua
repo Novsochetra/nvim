@@ -54,8 +54,16 @@ local function update_cursor_for_theme(theme)
     vim.opt.guicursor = "n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor,r-cr-o:hor20-Cursor"
     vim.api.nvim_set_hl(0, "Cursor", { bg = "#FFFFFF", fg = "NONE" })
     vim.api.nvim_set_hl(0, "lCursor", { bg = "#FFFFFF", fg = "NONE" })
-    vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
+
+    -- Make editor and NvimTree fully transparent
+    vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
+    vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE" })
+    vim.api.nvim_set_hl(0, "NvimTreeNormal", { bg = "NONE" })
+    vim.api.nvim_set_hl(0, "NvimTreeNormalNC", { bg = "NONE" })
+    vim.api.nvim_set_hl(0, "NvimTreeEndOfBuffer", { bg = "NONE" })
+
   end
+
 end
 
 
