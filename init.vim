@@ -6,6 +6,10 @@
   source ~/.config/nvim/plugin-config/dashboard.lua
 " ************************* Notify Configuration ************************* "
 
+" " ************************* Install Plugin ************************* "
+  source ~/.config/nvim/autocmd.lua
+" ************************* End Install Plugin ************************* "
+
 " ************************* Treesitter Configuration ************************* "
   source ~/.config/nvim/plugin-config/treesitter.lua
 " ************************* End Treesitter Configuration ************************* "
@@ -34,15 +38,6 @@
 " ************************* Buffer Configuration ************************* "
   source ~/.config/nvim/plugin-config/buffer.vim
 " ************************* End Buffer Configuration ************************* "
-
-
-" ************************* Auto Load Key Binding Configuration ************************* "
-  source ~/.config/nvim/autocmd.vim
-" ************************* End Auto Load Key Binding Configuration ************************* "
-
-"" * * * NERDTree CONFIGURATION * * *  "
-"  source ~/.config/nvim/plugin-config/nerdtree.vim
-" * * * END NERDTree CONFIGURATION * * *  "
 
 " ************************* Coc Configuration ************************* "
 " source ~/.config/nvim/plugin-config/coc.vim
@@ -134,6 +129,10 @@
   source ~/.config/nvim/plugin-config/nvim-flutter.lua
 " ************************* Flutter / Dart Configuration ************************* "
 
+" ************************* nvim/tree Configuration ************************* "
+  source ~/.config/nvim/plugin-config/nvim-tree.lua
+" ************************* nvim/tree Configuration ************************* "
+
 " ************************* Bufferline Configuration ************************* "
   source ~/.config/nvim/plugin-config/bufferline.lua
 " ************************* Bufferline Configuration ************************* "
@@ -146,12 +145,9 @@
   source ~/.config/nvim/plugin-config/leap.lua
 " ************************* nvim/leap Configuration ************************* "
 
-" ************************* nvim/tree Configuration ************************* "
-  source ~/.config/nvim/plugin-config/nvim-tree.lua
-" ************************* nvim/tree Configuration ************************* "
-
-
 "                                 Theme Only 
 " ************************* nvim/surround Configuration ************************* "
   source ~/.config/nvim/plugin-config/one-dark-pro.lua
 " ************************* nvim/surround Configuration ************************* "
+
+

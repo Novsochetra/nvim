@@ -1,4 +1,23 @@
 require("nvim-tree").setup({
+
+  hijack_cursor = false,
+  open_on_setup = false,
+  open_on_setup_file = false,
+
+  -- hijack_cursor = false,
+  -- auto_reload_on_write = true,
+  -- disable_netrw = false,
+  -- hijack_netrw = true,
+  -- hijack_unnamed_buffer_when_opening = false,
+  -- root_dirs = {},
+  -- prefer_startup_root = false,
+  -- sync_root_with_cwd = false,
+  -- reload_on_bufenter = false,
+  -- respect_buf_cwd = false,
+  -- select_prompts = false,
+  open_on_tab = false,
+
+
   sort_by = "name",
   view = {
     width = 30,
