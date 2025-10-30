@@ -9,8 +9,9 @@ vim.api.nvim_create_autocmd("VimEnter", {
 
     -- Case 1: no args (plain `nvim`)
     -- Case 2: single arg that is a directory (`nvim .`)
-    if argc == 0 or (vim.fn.argv(0) == ".") then
+    if argc == 0 or (vim.fn.argv(0) == ".") or (vim.fn.argv(0) == "NvimTree_1") then
       -- Now open Dashboard
+      vim.cmd("enew")
       vim.cmd("Dashboard")
     end
   end,
