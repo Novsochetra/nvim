@@ -1,8 +1,6 @@
 require("nvim-tree").setup({
 
   hijack_cursor = false,
-  open_on_setup = false,
-  open_on_setup_file = false,
 
   -- hijack_cursor = false,
   -- auto_reload_on_write = true,
