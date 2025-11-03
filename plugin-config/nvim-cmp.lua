@@ -58,9 +58,16 @@ cmp.setup({
 local Input = require("nui.input")
 -- local event = require("nui.input.event")
 
+-- vim.keymap.set('n', 'gd', function()
+--   require('telescope.builtin').lsp_definitions()
+-- end, { desc = '[G]oto [D]efinition' })
+
 vim.keymap.set('n', 'gd', function()
-  require('telescope.builtin').lsp_definitions()
-end, { desc = '[G]oto [D]efinition' })
+  local ok = pcall(vim.lsp.buf.definition)
+  if not ok then
+    print("No definition found by LSP")
+  end
+end)
 
 vim.keymap.set('n', 'gy', function()
   require('telescope.builtin').lsp_type_definitions()
@@ -121,39 +128,39 @@ end, { desc = 'Workspace Symbols' })
 
 
 -- Document highlights if supported
-vim.api.nvim_create_autocmd("LspAttach", {
-  callback = function(args)
-    local client = vim.lsp.get_client_by_id(args.data.client_id)
-    local buf = args.buf
-
-    -- Highlight references if supported
-    if client and client.supports_method("textDocument/documentHighlight") then
-      local hl_group = vim.api.nvim_create_augroup("custom-lsp-highlight-" .. buf, { clear = true })
-
-      vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
-        buffer = buf,
-        group = hl_group,
-        callback = vim.lsp.buf.document_highlight,
-      })
-
-      vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
-        buffer = buf,
-        group = hl_group,
-        callback = vim.lsp.buf.clear_references,
-      })
-    end
-
-    -- Inlay hints toggle if supported
-    if client and client.supports_method("textDocument/inlayHint") then
-      vim.keymap.set("n", "<leader>th", function()
-        vim.lsp.inlay_hint.enable(
-          not vim.lsp.inlay_hint.is_enabled { bufnr = buf },
-          { bufnr = buf }
-        )
-      end, { buffer = buf, desc = "Toggle Inlay Hints" })
-    end
-  end,
-})
+-- vim.api.nvim_create_autocmd("LspAttach", {
+--   callback = function(args)
+--     local client = vim.lsp.get_client_by_id(args.data.client_id)
+--     local buf = args.buf
+--
+--     -- Highlight references if supported
+--     if client and client.supports_method("textDocument/documentHighlight") then
+--       local hl_group = vim.api.nvim_create_augroup("custom-lsp-highlight-" .. buf, { clear = true })
+--
+--       vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
+--         buffer = buf,
+--         group = hl_group,
+--         callback = vim.lsp.buf.document_highlight,
+--       })
+--
+--       vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
+--         buffer = buf,
+--         group = hl_group,
+--         callback = vim.lsp.buf.clear_references,
+--       })
+--     end
+--
+--     -- Inlay hints toggle if supported
+--     if client and client.supports_method("textDocument/inlayHint") then
+--       vim.keymap.set("n", "<leader>th", function()
+--         vim.lsp.inlay_hint.enable(
+--           not vim.lsp.inlay_hint.is_enabled { bufnr = buf },
+--           { bufnr = buf }
+--         )
+--       end, { buffer = buf, desc = "Toggle Inlay Hints" })
+--     end
+--   end,
+-- })
 
 vim.lsp.handlers['textDocument/completion'] = function(_, result, ctx, _)
   print(vim.inspect(result))
