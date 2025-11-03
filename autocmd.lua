@@ -4,15 +4,21 @@ vim.api.nvim_create_autocmd("VimEnter", {
     local first_arg = argc > 0 and vim.fn.argv(0) or ""
 
     local ok, api = pcall(require, "nvim-tree.api")
-    -- when enter neovim i don't want nvim-tree to open
-    api.tree.close()
+    if not ok then
+      return
+    end
 
     -- Case 1: no args (plain `nvim`)
     -- Case 2: single arg that is a directory (`nvim .`)
-    if argc == 0 or (vim.fn.argv(0) == ".") or (vim.fn.argv(0) == "NvimTree_1") then
-      -- Now open Dashboard
-      vim.cmd("enew")
-      vim.cmd("Dashboard")
+    if argc == 0 or first_arg == "." or first_arg == "NvimTree_1" then
+      -- close nvim-tree if it auto-opened
+      api.tree.close()
+
+      -- open dashboard
+      vim.schedule(function()
+        vim.cmd("enew")
+        vim.cmd("Dashboard")
+      end)
     end
   end,
 })
