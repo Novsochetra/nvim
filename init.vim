@@ -130,7 +130,7 @@
 " ************************* Flutter / Dart Configuration ************************* "
 
 " ************************* nvim/tree Configuration ************************* "
-  source ~/.config/nvim/plugin-config/nvim-tree.lua
+" source ~/.config/nvim/plugin-config/nvim-tree.lua
 " ************************* nvim/tree Configuration ************************* "
 
 " ************************* Bufferline Configuration ************************* "
@@ -144,6 +144,10 @@
 " ************************* nvim/leap Configuration ************************* "
   source ~/.config/nvim/plugin-config/leap.lua
 " ************************* nvim/leap Configuration ************************* "
+
+" ************************* yazi Configuration ************************* "
+  source ~/.config/nvim/plugin-config/yazi.lua
+" ************************* yazi Configuration ************************* "
 
 "                                 Theme Only 
 " ************************* nvim/surround Configuration ************************* "

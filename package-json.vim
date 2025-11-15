@@ -11,6 +11,7 @@ Plug 'olimorris/onedarkpro.nvim'
 " =====================
 " File Explorer / Navigation
 " =====================
+Plug 'mikavilpas/yazi.nvim'
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ThePrimeagen/harpoon', {'branch': 'harpoon2'}

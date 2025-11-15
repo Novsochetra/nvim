@@ -33,3 +33,8 @@ vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "CursorHold", "CursorHo
   end,
 })
 
+vim.api.nvim_create_autocmd("UIEnter", {
+  callback = function()
+    require("yazi").setup({ })
+  end,
+})
