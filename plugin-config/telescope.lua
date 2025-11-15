@@ -7,6 +7,7 @@ telescope.setup({
   defaults = {
     previewer = true,
     layout_strategy = "center", 
+    sorting_strategy = "ascending",
     borderchars = {
       { '─', '│', '─', '│', '┌', '┐', '┘', '└'},
       prompt = {"─", "│", " ", "│", '┌', '┐', "│", "│"},
