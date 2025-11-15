@@ -47,12 +47,12 @@ vim.api.nvim_create_autocmd("UIEnter", {
           -- check if it is a directory
           if vim.fn.isdirectory(path) == 1 then
             vim.cmd("cd " .. path)
-            vim.notify("Neovim CWD changed to directory: " .. path)
+            require("notify").notify("Neovim CWD changed to directory: " .. path)
           else
             -- it's a file, set cwd to parent folder
             local dir = vim.fn.fnamemodify(path, ":h")
             vim.cmd("cd " .. dir)
-            vim.notify("Neovim CWD changed to parent folder: " .. dir)
+            require("notify").notify("Neovim CWD changed to parent folder: " .. dir)
           end
         end
       end
