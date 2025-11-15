@@ -44,6 +44,7 @@ telescope.setup({
 -- Load extensions AFTER setup
 pcall(telescope.load_extension, "fzf")
 pcall(telescope.load_extension, "live_grep_args")
+require("telescope").load_extension("noice")
 
 -- Keymaps
 vim.keymap.set("n", "<leader>f", function()

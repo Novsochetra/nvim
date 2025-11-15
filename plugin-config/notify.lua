@@ -46,4 +46,4 @@ vim.cmd([[
 ]])
 
 -- Override vim.notify to use nvim-notify
-vim.notify = notify
+-- vim.notify = notify

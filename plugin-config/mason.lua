@@ -46,9 +46,3 @@ lspconfig.dartls.setup({
     end
   end,
 })
-
-lspconfig.sourcekit.setup {
-  cmd = { "xcrun", "sourcekit-lsp" },
-  filetypes = { "swift", "swiftpm" },
-  root_dir = require('lspconfig.util').root_pattern("Package.swift", ".git"),
-}

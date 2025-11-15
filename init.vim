@@ -149,6 +149,10 @@
   source ~/.config/nvim/plugin-config/yazi.lua
 " ************************* yazi Configuration ************************* "
 
+" ************************* smear-cursor Configuration ************************* "
+  source ~/.config/nvim/plugin-config/smear-cursor.lua
+" ************************* smear-cursor Configuration ************************* "
+
 "                                 Theme Only 
 " ************************* nvim/surround Configuration ************************* "
   source ~/.config/nvim/plugin-config/one-dark-pro.lua

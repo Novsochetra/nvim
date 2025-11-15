@@ -11,6 +11,7 @@ Plug 'olimorris/onedarkpro.nvim'
 " =====================
 " File Explorer / Navigation
 " =====================
+Plug 'sphamba/smear-cursor.nvim'
 Plug 'mikavilpas/yazi.nvim'
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'christoomey/vim-tmux-navigator'
