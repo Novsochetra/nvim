@@ -10,6 +10,7 @@ local lazygit  = Terminal:new({
 
 
 function lazygit_toggle()
+  lazygit.dir = vim.fn.getcwd()   -- 🔥 update folder every time
   lazygit:toggle()
 end
 
