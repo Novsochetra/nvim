@@ -21,6 +21,7 @@ require("nvim-tree").setup({
     width = 30,
     side = "left",
     preserve_window_proportions = true,
+    change_cwd = true,
   },
   renderer = {
     highlight_opened_files = "name",
