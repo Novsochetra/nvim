@@ -73,3 +73,9 @@ update_cursor_for_theme(theme_name)
 
 -- Python host
 vim.g.python3_host_prog = '/usr/local/bin/python3'
+
+vim.keymap.set("n", "<leader>vc", ":edit ~/.config/nvim/<CR>", { desc = "Edit init.lua" })
+
+-- Enable autoread option to automatically load external changes
+vim.opt.autoread = true
+

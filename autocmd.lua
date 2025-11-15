@@ -22,3 +22,14 @@ vim.api.nvim_create_autocmd("VimEnter", {
     end
   end,
 })
+
+-- For Auto Reload File Change On Disk
+vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "CursorHold", "CursorHoldI" }, {
+  group = vim.api.nvim_create_augroup("CheckFileChanges", { clear = true }),
+  callback = function()
+    if vim.fn.mode() ~= 'c' then -- Avoid running in command mode
+      vim.cmd("checktime")
+    end
+  end,
+})
+
