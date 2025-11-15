@@ -5,6 +5,14 @@ local actions = require("telescope.actions")
 -- Telescope setup
 telescope.setup({
   defaults = {
+    previewer = true,
+    layout_strategy = "center", 
+    borderchars = {
+      { '─', '│', '─', '│', '┌', '┐', '┘', '└'},
+      prompt = {"─", "│", " ", "│", '┌', '┐', "│", "│"},
+      results = {"─", "│", "─", "│", "├", "┤", "┘", "└"},
+      preview = { '─', '│', '─', '│', '┌', '┐', '┘', '└'},
+    },
     mappings = {
       i = {
         ["<C-j>"] = actions.move_selection_next,
@@ -15,6 +23,13 @@ telescope.setup({
     },
     file_ignore_patterns = { "node_modules", ".git" },
   },
+  pickers = {
+    find_files = {
+      prompt_position = 'top',
+      previewer = false,
+    },
+  },
+
   extensions = {
     fzf = {
       fuzzy = true,
