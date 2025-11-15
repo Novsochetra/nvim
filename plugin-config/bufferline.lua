@@ -2,7 +2,7 @@ local bufferline = require("bufferline")
 
 bufferline.setup({
   options = {
-    mode = "buffers",
+    mode = "tabs",
     diagnostics = "nvim_lsp",
     offsets = {{filetype = "NvimTree", text = "  File Explorer  ", padding = 0}},
     show_buffer_close_icons = true,
