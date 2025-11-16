@@ -17,20 +17,21 @@ map('n', ';t', ':BufferLineCyclePrev<CR>', opts)
 map('n', '<Tab>', ':BufferLineCycleNext<CR>', opts)
 map('n', '<S-Tab>', ':BufferLineCyclePrev<CR>', opts)
 map('n', ';X', ':BufferLineCloseOthers<CR>', opts)
+map('n', ';x', ':bdelete<CR>', opts)
 
 -- Close current buffer and go to next
-map('n', ';x', function()
-  local current = vim.api.nvim_get_current_buf()
-  local name = vim.api.nvim_buf_get_name(current)
-  if name:match('NvimTree_') then return end
-
-  vim.cmd('BufferLineCyclePrev')
-  vim.schedule(function()
-    if vim.api.nvim_buf_is_valid(current) then
-      vim.cmd('bdelete ' .. current)
-    end
-  end)
-end, opts)
+-- map('n', ';x', function()
+--   local current = vim.api.nvim_get_current_buf()
+--   local name = vim.api.nvim_buf_get_name(current)
+--   if name:match('NvimTree_') then return end
+--
+--   vim.cmd('BufferLineCyclePrev')
+--   vim.schedule(function()
+--     if vim.api.nvim_buf_is_valid(current) then
+--       vim.cmd('bdelete ' .. current)
+--     end
+--   end)
+-- end, opts)
 
 -- Open new tab
 map('n', '<C-n>', ':tabnew<CR>', opts)
