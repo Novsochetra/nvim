@@ -79,6 +79,9 @@ vim.keymap.set('n', 'gi', function()
   require('telescope.builtin').lsp_implementations()
 end, { desc = '[G]oto [D]efinition' })
 
+-- keymap for hover documentation
+vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "LSP Hover Documentation" })
+
 vim.keymap.set("n", "grn", function()
   local curr_word = vim.fn.expand('<cword>')
   local row, col = unpack(vim.api.nvim_win_get_cursor(0))
