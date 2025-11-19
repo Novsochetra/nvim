@@ -25,7 +25,7 @@
 --   })
 -- end)
 
-vim.keymap.set("n", "<leader>n", ":Yazi cwd<CR>", { desc = "Open Yazi for current dir" })
+vim.keymap.set("n", "<leader>n", ":Yazi<CR>", { desc = "Open Yazi for current dir" })
 vim.keymap.set("n", "<leader>vc", function()
   vim.cmd("cd ~/.config/nvim")
 end, { desc = "Open Nvim config directory with default explorer" })
