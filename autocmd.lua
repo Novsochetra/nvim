@@ -35,6 +35,22 @@ vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "CursorHold", "CursorHo
 
 vim.api.nvim_create_autocmd("UIEnter", {
   callback = function()
-    require("yazi").setup({})
+    require("yazi").setup({
+      hooks = {
+        yazi_closed_successfully = function(chosen_file, config, state)
+          -- INFO: when we selected the file we will need to change neovim working dir
+          -- otherwise plugin like telescope.find_files will search the default folder
+          if chosen_file then
+            local path = vim.fn.fnamemodify(chosen_file, ":p") -- full path
+
+            -- check if it is a directory
+            if vim.fn.isdirectory(path) == 1 then
+              vim.cmd("cd " .. path)
+              require("utils.notify").success("Neovim CWD changed to directory: " .. path)
+            end
+          end
+        end
+      }
+    })
   end,
 })

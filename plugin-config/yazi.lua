@@ -1,5 +1,5 @@
 vim.keymap.set("n", "<leader>n", ":Yazi<CR>", { desc = "Open Yazi for current dir" })
 vim.keymap.set("n", "<leader>vc", function()
   vim.cmd("cd ~/.config/nvim")
-  require("notify")("Changed Directory To ~/.config/nvim")
+  require("utils.notify").success("~/.config/nvim", "Changed Directory To ")
 end, { desc = "Open Nvim config directory with default explorer" })
