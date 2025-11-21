@@ -153,9 +153,13 @@
   source ~/.config/nvim/plugin-config/smear-cursor.lua
 " ************************* smear-cursor Configuration ************************* "
 
+" ************************* smear-cursor Configuration ************************* "
+  source ~/.config/nvim/plugin-config/comment.lua
+" ************************* smear-cursor Configuration ************************* "
+
 "                                 Theme Only 
 " ************************* nvim/surround Configuration ************************* "
-  source ~/.config/nvim/plugin-config/one-dark-pro.lua
+"  source ~/.config/nvim/plugin-config/one-dark-pro.lua
 " ************************* nvim/surround Configuration ************************* "
 
 

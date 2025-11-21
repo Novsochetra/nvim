@@ -41,8 +41,9 @@ vim.opt.smartcase = true
 
 -- Colorscheme
 -- vim.cmd.colorscheme "nightfly"
--- local theme_name = "catppuccin-mocha" -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
-local theme_name = "onedark" -- onedark onelight onedark_vivid onedark_dark vaporwave
+-- local theme_name = "gruvbox"
+local theme_name = "catppuccin-mocha" -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+-- local theme_name = "onedark" -- onedark onelight onedark_vivid onedark_dark vaporwave
 vim.cmd("colorscheme " .. theme_name)
 
 -- Function to update cursor based on theme
@@ -64,9 +65,7 @@ local function update_cursor_for_theme(theme)
     vim.api.nvim_set_hl(0, "NvimTreeNormal", { bg = "NONE" })
     vim.api.nvim_set_hl(0, "NvimTreeNormalNC", { bg = "NONE" })
     vim.api.nvim_set_hl(0, "NvimTreeEndOfBuffer", { bg = "NONE" })
-
   end
-
 end
 
 

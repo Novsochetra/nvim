@@ -6,7 +6,6 @@ Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'mhartington/oceanic-next'
 Plug 'morhetz/gruvbox'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
-Plug 'olimorris/onedarkpro.nvim'
 
 " =====================
 " File Explorer / Navigation
@@ -88,5 +87,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 " Terminal / Toggleterm
 " =====================
 Plug 'akinsho/toggleterm.nvim'
+
+Plug 'numToStr/Comment.nvim'
 call plug#end()
 " ************************* End Install Plugin ************************* "
