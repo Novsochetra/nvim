@@ -88,6 +88,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 " =====================
 Plug 'akinsho/toggleterm.nvim'
 
-Plug 'numToStr/Comment.nvim'
+Plug 'numToStr/Comment.nvim' 
+Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 call plug#end()
 " ************************* End Install Plugin ************************* "
